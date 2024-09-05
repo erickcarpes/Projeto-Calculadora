@@ -18,15 +18,26 @@ function back(){
     document.querySelector('.operation').innerHTML = numeros.substring(0, numeros.length-1);
 }
 
-function somar(){
-    let numeros = document.querySelector('.operation').innerHTML;
+function add(){
+    let operacao = document.querySelector('.operation').innerHTML;
+    let resultado = document.querySelector('.result').innerHTML;
 
-    if(numeros){
-        document.querySelector('.result').innerHTML = eval(numeros);
+    if(resultado === "0" || resultado ===  "" || resultado === "Infinity" || resultado == "Erro"){
+        resultado = operacao            
+    }else{
+        resultado += operacao;
     }
-    
+
+    try{
+        resultado = eval(resultado)
+    }catch(error){
+        resultado = "Erro";
+    }
+
+    document.querySelector('.result').innerHTML = resultado;
     document.querySelector('.operation').innerHTML = "";
 }
+
 
 function changeSignal(){
     let numeros = document.querySelector('.result').innerHTML;
