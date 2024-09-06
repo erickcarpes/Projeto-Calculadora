@@ -15,7 +15,6 @@ body{
     width: 300px;
     padding: 15px;
     background-color: rgba(45, 42, 55, 1);
-
 }
 
 .display{
@@ -40,7 +39,7 @@ body{
     color: white;
     font-size: clamp(15px, 5vw, 30px); 
     margin-bottom: 15px;
-    margin-left: 50px; 
+    margin-left: 45px; 
     letter-spacing: 1px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -51,9 +50,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 35px;
+    padding-left: 25px;
     font-size: 22px;
-    color: #7A7586;
 }
 
 .equal span{
@@ -70,24 +68,25 @@ body{
     height: 55px;
     margin-left: 13px;
     margin-bottom: 7px;
-    border: initial;
     border-radius: 50%;
     font-size: 22px;
     cursor: pointer;
-    color: white;
     border:rgba(45, 42, 55, 1);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0,0,0, 0.5);
+
 }
 
 .btn:hover{
     background: rgb(39, 36, 41);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;    
 }
 
 .btn.CE{
-    color: rgb(126, 99, 171);
-    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.29);
+    color: rgb(120, 84, 179);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+
 }
 
 .btn.operator{
