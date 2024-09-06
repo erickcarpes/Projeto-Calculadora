@@ -29,17 +29,22 @@ function add(){
     let resultado = document.querySelector('.result').innerHTML;
 
     //vallidação para casos de exceção
-    if(resultado === "0" || resultado ===  "" || resultado === "Infinity" || resultado == "Erro"){
+    if(resultado === "0" || resultado ===  "" || resultado.substring(0,4) === "ERRO"){
         resultado = operacao            
     }else{
         resultado += operacao;
     }
 
+
     //try-catch para caso não seja possivel efetuar a soma
     try{
         resultado = eval(resultado)
     }catch(error){
-        resultado = "Erro";
+        resultado = "ERRO";
+    }
+
+    if(resultado == "Infinity"){
+        resultado = "ERRO: kkkkk"
     }
 
     document.querySelector('.result').innerHTML = resultado;
