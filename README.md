@@ -6,7 +6,7 @@ This is a simple web-based calculator built with **HTML**, **CSS**, and **JavaSc
 
 - **Basic operations**: Supports addition, subtraction, multiplication, and division.
 - **Responsive design**: Optimized for different screen sizes.
-- **Error handling**: Handles special cases like division by zero and displays proper messages such as "Infinity" or "Error".
+- **Error handling**: Handles special cases like division by zero and displays proper message such as "Error".
 - **User-friendly interface**: Simple and clean layout for easy usage.
 
 ## **Technologies Used**
